@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/Logo.png" type="image/png" />
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="assets/Logo.png" alt="Logo Açaí" class="logo-icon" />
+        <img src="assets/caixa.png" alt="Caixa" class="icon" />
+        <img src="assets/estoque.png" alt="Estoque" class="icon" />
+    </div>
+
+    <div class="main-content">
+        <h2>ESTOQUE</h2>
+        <p><em>Adicionar Produto</em></p>
+
+        <div class="form-card">
+            <div class="form-group">
+                <label for="nome">NOME DO PRODUTO</label>
+                <input type="text" id="nome" placeholder="Ex: Pastel de queijo" />
+            </div>
+            <div class="form-group">
+                <label for="quantidade">QUANTIDADE</label>
+                <input type="number" id="quantidade" placeholder="Ex: 10" />
+            </div>
+            <div class="form-group">
+                <label for="tamanho">TAMANHO</label>
+                <input type="text" id="tamanho" placeholder="Ex: Médio" />
+            </div>
+            <div class="form-group">
+                <label for="preco">PREÇO UNITÁRIO ($)</label>
+                <input type="number" id="preco" placeholder="Ex: 5.50" step="0.01" />
+            </div>
+
+
+            <div class="botoes">
+                <button class="btn cancelar">Cancelar</button>
+                <button class="btn confirmar">Adicionar Produto</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/Logo.png" type="image/png" />
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="assets/Logo.png" alt="Logo Açaí" class="logo-icon" />
+        <img src="assets/caixa.png" alt="Caixa" class="icon" />
+        <img src="assets/estoque.png" alt="Estoque" class="icon" />
+    </div>
+
+    <main class="main-content carrinho-page">
+        <section class="itens-carrinho">
+            <h2>ITENS DO CARRINHO</h2>
+            <div class="produtos-carrinho">
+                <div class="item-carrinho">
+                    <div>
+                        <strong>Nome do item</strong><br />
+                        <span>Quantidade: 2</span><br />
+                        <span>Valor: R$ 14,00</span>
+                    </div>
+                </div>
+
+                <div class="item-carrinho">
+                    <div>
+                        <strong>Nome do item</strong><br />
+                        <span>Quantidade: 2</span><br />
+                        <span>Valor: R$ 14,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="valores">
+            <div>
+                <h3>VALOR TOTAL</h3>
+                <input type="text" value="R$ 23,00" readonly />
+            </div>
+            <div>
+                <h3>CUPOM</h3>
+                <input type="text" placeholder="Digite o cupom" readonly />
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="pagamento">
+            <h3>FORMA DE PAGAMENTO</h3>
+            <form class="opcoes">
+                <div class="opcao">
+                    <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" />
+                    <label for="dinheiro">Dinheiro</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" id="cartaoDebito" name="pagamento" value="cartaoDebito" />
+                    <label for="cartaoDebito">Cartão Débito</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" id="pix" name="pagamento" value="pix" />
+                    <label for="pix">Pix</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" id="cartaoCredito" name="pagamento" value="cartaoCredito" />
+                    <label for="cartaoCredito">Cartão Crédito</label>
+                </div>
+            </form>
+        </section>
+
+        <div class="botoes-carrinho">
+            <button>ADICIONAR ITENS</button>
+            <button>FINALIZAR PEDIDO</button>
+            <button>CANCELAR PEDIDO</button>
+        </div>
+    </main>
+</body>
+
+</html>
