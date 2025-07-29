@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Produtos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/Logo.png" type="image/png" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="assets/Logo.png" alt="Logo Açaí" class="logo-icon" />
+    <img src="assets/caixa.png" alt="Caixa" class="icon" />
+    <img src="assets/estoque.png" alt="Estoque" class="icon" />
+  </div>
+
+  <div class="main-content">
+    <header class="top-bar">
+      <h1>ITENS DO CARRINHO</h1>
+    </header>
+
+    <section class="categoria">
+      <h2>Açaí</h2>
+      <div class="produto-grid">
+        <!-- Produto -->
+        <div class="produto-card">
+          <div class="produto-imagem"></div>
+          <p>Estoque: 10</p>
+          <div class="quantidade">
+            <button class="menos">−</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </div>
+        <!-- Copie para mais produtos -->
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>Pastel</h2>
+      <div class="produto-grid">
+        <!-- Produto -->
+        <div class="produto-card">
+          <div class="produto-imagem"></div>
+          <p>Estoque: 10</p>
+          <div class="quantidade">
+            <button class="menos">−</button>
+            <span class="contador">0</span>
+            <button class="mais">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img src="assets/carrinho.png" alt="Carrinho" class="carrinho-fixo" />
+  </div>
+</body>
+</html>
