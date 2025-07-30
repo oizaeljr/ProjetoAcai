@@ -103,11 +103,28 @@ body {
     text-align: center;
 }
 
-.produto-imagem {
+.produto-imagemAcai {
     width: 100%;
     height: 100px;
     background-color: #d9d9d9;
     margin-bottom: 10px;
+    background-image: url('../assets/acai.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px                                                                                                                                                               ;
+}
+
+.produto-imagemPastel {
+    width: 100%;
+    height: 100px;
+    background-color: #d9d9d9;
+    margin-bottom: 10px;
+    background-image: url('../assets/pastel.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px                                                                                                                                                               ;
 }
 
 .quantidade {
@@ -254,6 +271,7 @@ body {
     transition: background-color 0.2s;
     border: 4px solid #f2f4f3;
     color: #630063;
+    width: 100%;
 }
 
 .botoes-carrinho button:hover {

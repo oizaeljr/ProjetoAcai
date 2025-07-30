@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Produtos</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="assets/Logo.png" type="image/png" />
-  <script defer src="js/script.js"></script>
 </head>
-<body>
+
+<body onload="listarProdutos()">
   <div class="sidebar">
-    <img src="assets/Logo.png" alt="Logo Açaí" class="logo-icon" />
-    <img src="assets/caixa.png" alt="Caixa" class="icon" />
-    <img src="assets/estoque.png" alt="Estoque" class="icon" />
+    <a href="index.html"><img src="assets/Logo.png" alt="Logo Açaí" class="logo-icon" /></a>
+    <a href="produtos.html"><img src="assets/caixa.png" alt="Caixa" class="icon" /></a>
+    <a href="estoque.html"><img src="assets/estoque.png" alt="Estoque" class="icon" /></a>
   </div>
 
   <div class="main-content">
@@ -26,10 +27,12 @@
 
     <section class="categoria">
       <h2>Açaí</h2>
-      <div class="produto-grid">
+      <div class="produto-grid" id="listaAcai">
         <!-- Produto -->
-        <div class="produto-card">
-          <div class="produto-imagem"></div>
+        <div class="produto-card" style="display: none;">
+          <span>Açaí Tradicional</span>
+          <div class="produto-imagemAcai"></div>
+          <p>Preço: 10</p>
           <p>Estoque: 10</p>
           <div class="quantidade">
             <button class="menos">−</button>
@@ -43,10 +46,11 @@
 
     <section class="categoria">
       <h2>Pastel</h2>
-      <div class="produto-grid">
+      <div class="produto-grid" id="listaPastel">
         <!-- Produto -->
-        <div class="produto-card">
-          <div class="produto-imagem"></div>
+        <div class="produto-card" style="display: none;">
+          <span>Pastel de Queijo</span>
+          <div class="produto-imagemPastel"></div>
           <p>Estoque: 10</p>
           <div class="quantidade">
             <button class="menos">−</button>
@@ -57,7 +61,9 @@
       </div>
     </section>
 
-    <img src="assets/carrinho.png" alt="Carrinho" class="carrinho-fixo" />
+    <a href="carrinho.html"><img src="assets/carrinho.png" alt="Carrinho" class="carrinho-fixo" /></a>
   </div>
 </body>
+
 </html>
+<script src="./js/funcProdutos.js"></script>
