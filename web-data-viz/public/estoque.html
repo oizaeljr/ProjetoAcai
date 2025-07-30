@@ -10,7 +10,7 @@
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
+<body onload="listarProdutos()">
     <div class="sidebar">
         <a href="index.html"><img src="assets/Logo.png" alt="Logo Açaí" class="logo-icon" /></a>
         <a href="produtos.html"><img src="assets/caixa.png" alt="Caixa" class="icon" /></a>
@@ -36,12 +36,13 @@
             </select>
         </form>
 
-        <div class="lista-produtos">
-            <div class="item-produto">
+        <div class="lista-produtos" id="listaEstoque">
+            <div class="item-produto" style="display: none;">
                 <div class="info-produto">
                     <span><strong>Nome do Produto:</strong> Pastel de queijo</span>
                     <span><strong>Quantidade:</strong> 10</span>
                     <span><strong>Tamanho:</strong> Médio</span>
+                    <span><strong>Preço Unitário (R$):</strong> 2.5</span>
                 </div>
                 <div class="botoes-produto">
                     <button class="editar">Editar</button>
@@ -59,3 +60,4 @@
 </body>
 
 </html>
+<script src="./js/funcEstoques.js"></script>

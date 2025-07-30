@@ -7,8 +7,4 @@ router.get("/listarProdutos", function (req, res) {
     produtosController.listarProdutos(req, res);
 })
 
-router.get("/pesquisaProdutos/:nomeProduto", function (req, res) {
-    produtosController.pesquisaProdutos(req, res);
-}) 
-
 module.exports = router;
